@@ -1,0 +1,33 @@
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">{{modalTitle}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nev" placeholder="Pizza neve:" ng-model="record.nev">
+                    <label for="nev">Pizza neve:</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="feltet" placeholder="Feltétel" ng-model="record.feltet">
+                    <label for="feltet">Feltét</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="kaloria" placeholder="Kalória" ng-model="record.kaloria">
+                    <label for="kaloria">Kalória</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="ar" placeholder="Ár" ng-model="record.ar">
+                    <label for="ar">Ár</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezár</button>
+                <button type="button" class="btn btn-{{buttonColor}}" ng-click="crud()" data-bs-dismiss="modal">{{buttonText}}</button>
+            </div>
+        </div>
+    </div>
+</div>

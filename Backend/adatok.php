@@ -1,6 +1,6 @@
 <?php
-    $dbhost = 'localhost';
+    $dbhost = '172.16.100.12';
     $dbname = 'pizzeria';
-    $dbuser = 'root';
-    $dbpass = '';
+    $dbuser = '214SZFT';
+    $dbpass = '123456';
 ?>

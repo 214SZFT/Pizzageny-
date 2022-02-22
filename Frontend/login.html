@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="hu" ng-app="LoginApp" >
+<html lang="hu" ng-app="pizzaApp" >
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bejelentkezés</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!--<script src="./Frontend/js/dbFactory.js"></script>-->
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/sha1.js"></script>
+    <script src="js/dbFactory.js"></script>
+    <script src="js/login.js"></script>
 </head>
 <body>
     
     <form ng-controller="loginCtrl">
         <div class="form-floating mb-3">
-            <input type="email" ng-model="nev" class="form-control mb-3" id="floatingInput" placeholder="Név...">
+            <input type="text" ng-model="nev" class="form-control mb-3" id="floatingInput" placeholder="Név...">
             <label for="floatingInput">Név </label>
           </div>
           <div class="form-floating">
@@ -22,9 +25,7 @@
         </div>
         <button class="btn btn-primary mb-3" ng-click="login()">Bejelentkezés</button>
     </form>
-    <script src="js/angular.min.js"></script>
-    <script src="js/sha1.js"></script>
-    <script src="js/login.js"></script>
+ 
 
 </body>
 </html>

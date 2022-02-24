@@ -1,7 +1,7 @@
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+        <div class="modal-content" style="width: 200%;">
             <div class="modal-header">
                 <h5 class="modal-title" id="staticBackdropLabel">{{modalTitle}}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -19,27 +19,24 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr ng-repeat="pizza in pizzak | pizza.rendID == 2">
+                        <tr ng-repeat="pizza in pizzak">
                             <td>{{$index+1}}</td>
                             <td>{{pizza.pizzanev}}</td>
-                            <td>{{pizza.db}}</td>
-                            <td>{{pizza.egysar}}</td>
-                            <td>{{pizza.osszar}}</td>
+                            <td><input type="number" name="" style="width: 50px;" id="pizz" value="{{pizza.db}}" min="1"></td>
+                            <td>{{pizza.egysar}} Ft</td>
+                            <td>{{pizza.ossz}} Ft</td>
                             <td>
-                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop" ng-click="updateRecord(pizza.ID)">Módosít</button>
-                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" ng-click="deleteRecord(pizza.ID)">Töröl</button>
+                                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop" ng-click="updatePizza(pizza.tetelID, pizza.db)">Módosít</button>
+                                <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" ng-click="deletePizza(pizza.tetelID)">Töröl</button>
                             </td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td>Összesen: {{records.length}} rekord</td>
+                            <td>Összesen: {{pizzak.length}} rekord</td>
                         </tr>
                     </tfoot>
                 </table>
-            </div>
-            <div class="modal-footer">
-                
             </div>
         </div>
     </div>

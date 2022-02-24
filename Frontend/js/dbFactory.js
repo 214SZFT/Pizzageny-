@@ -58,6 +58,7 @@ app.factory('dbFactory', function($http, $q) {
                 table: tablename,
                 values: values
             }
+            console.log(data);
             $http.post('../Backend/updateRecord.php', data).then(function(response) {
                     deferred.resolve(response);
                 },

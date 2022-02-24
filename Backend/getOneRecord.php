@@ -9,7 +9,7 @@
     $data = json_decode(file_get_contents("php://input"));
     $condition = $data->condition;
     $table = $data->table;
-    $result = $conn->query("SELECT * FROM $table WHERE $condition")->fetch();
+    $result = $conn->query("SELECT * FROM $table WHERE $condition")->fetchAll();
     if ($result)
     {
         echo json_encode($result);

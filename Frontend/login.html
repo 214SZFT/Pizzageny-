@@ -15,15 +15,23 @@
 <body>
     
     <form ng-controller="loginCtrl">
-        <div class="form-floating mb-3">
-            <input type="text" ng-model="nev" class="form-control mb-3" id="floatingInput" placeholder="Név...">
-            <label for="floatingInput">Név </label>
-          </div>
-          <div class="form-floating">
-            <input type="password" class="form-control mb-3" ng-model="jelszo" id="floatingPassword" placeholder="Jelszó...">
-            <label for="floatingPassword">Jelszó: </label>
+        
+        <div ng-if="loggedIn==0">
+            <div class="form-floating mb-3">
+                <input type="text" ng-model="nev" class="form-control mb-3" id="floatingInput" placeholder="Név...">
+                <label for="floatingInput">Név </label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control mb-3" ng-model="jelszo" id="floatingPassword" placeholder="Jelszó...">
+                <label for="floatingPassword">Jelszó: </label>
+            </div>
+            <button class="btn btn-primary mb-3" ng-click="login()">Bejelentkezés</button>
         </div>
-        <button class="btn btn-primary mb-3" ng-click="login()">Bejelentkezés</button>
+        <div ng-if="loggedIn==1">
+            <input type="text"  class="form-control mb-3" ng-model="userName" id="floatingInput" disabled>
+            <button class="btn btn-primary mb-3" ng-click="logout()">Kijelentkezés</button>
+        </div>
+        
     </form>
  
 

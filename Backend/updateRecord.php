@@ -9,13 +9,6 @@
     $data = json_decode(file_get_contents("php://input"));
 
     $id = $data->id;
-    /*
-    $nev = $data->nev;
-    $klan = $data->klan;
-    $nem = $data->nem;
-    $suly = $data->suly;
-    $magassag = $data->magassag;
-    */
     $table = $data->table;
     $values = $data->values;
     $str = '';

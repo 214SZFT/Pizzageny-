@@ -1,5 +1,5 @@
 app.controller('loginCtrl', function($scope, $rootScope, dbFactory) {
-    $rootScope.loggedIn=1;
+    $rootScope.loggedIn=0;
 
     $scope.login=function () {
         

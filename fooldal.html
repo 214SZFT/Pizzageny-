@@ -1,12 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pizza rendelés</title>
+
+    <link rel="stylesheet" href="./Frontend/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./Frontend/css/pizza.css">
+
 </head>
 <body>
-    
+    <div class=" p-0">
+        <!--Header-->
+        <div class="header hatter d-flex align-items-center">
+            <h2 class="text-white ms-5">Pizzás rendeléses webes oldal</h2>
+        </div>
+
+
+        <!--Menu navigation-->
+        <ul>
+            <li><a href="">Főoldal</a></li>
+            <li><a href="">Választékunk</a></li>
+            <li style="float:right"><a class="active" href=""><i class="bx bx-log-in"></i></a></li>
+        </ul>
+
+
+        <!--Tartalom-->
+        <div ng-view class=" p-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa reprehenderit necessitatibus aliquam odio nam eius, delectus voluptatum odit ipsa, reiciendis a commodi error perspiciatis optio doloremque aspernatur cupiditate corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam rem repellendus fuga architecto est autem corporis saepe, neque minus labore quo repudiandae. Dolore illum aspernatur eum accusamus magnam architecto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa reprehenderit necessitatibus aliquam odio nam eius, delectus voluptatum odit ipsa, reiciendis a commodi error perspiciatis optio doloremque aspernatur cupiditate corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam rem repellendus fuga architecto est autem corporis saepe, neque minus labore quo repudiandae. Dolore illum aspernatur eum accusamus magnam architecto?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa reprehenderit necessitatibus aliquam odio nam eius, delectus voluptatum odit ipsa, reiciendis a commodi error perspiciatis optio doloremque aspernatur cupiditate corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam rem repellendus fuga architecto est autem corporis saepe, neque minus labore quo repudiandae. Dolore illum aspernatur eum accusamus magnam architecto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa reprehenderit necessitatibus aliquam odio nam eius, delectus voluptatum odit ipsa, reiciendis a commodi error perspiciatis optio doloremque aspernatur cupiditate corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam rem repellendus fuga architecto est autem corporis saepe, neque minus labore quo repudiandae. Dolore illum aspernatur eum accusamus magnam architecto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa reprehenderit necessitatibus aliquam odio nam eius, delectus voluptatum odit ipsa, reiciendis a commodi error perspiciatis optio doloremque aspernatur cupiditate corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam rem repellendus fuga architecto est autem corporis saepe, neque minus labore quo repudiandae. Dolore illum aspernatur eum accusamus magnam architecto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa reprehenderit necessitatibus aliquam odio nam eius, delectus voluptatum odit ipsa, reiciendis a commodi error perspiciatis optio doloremque aspernatur cupiditate corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam rem repellendus fuga architecto est autem corporis saepe, neque minus labore quo repudiandae. Dolore illum aspernatur eum accusamus magnam architecto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa reprehenderit necessitatibus aliquam odio nam eius, delectus voluptatum odit ipsa, reiciendis a commodi error perspiciatis optio doloremque aspernatur cupiditate corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam rem repellendus fuga architecto est autem corporis saepe, neque minus labore quo repudiandae. Dolore illum aspernatur eum accusamus magnam architecto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa reprehenderit necessitatibus aliquam odio nam eius, delectus voluptatum odit ipsa, reiciendis a commodi error perspiciatis optio doloremque aspernatur cupiditate corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam rem repellendus fuga architecto est autem corporis saepe, neque minus labore quo repudiandae. Dolore illum aspernatur eum accusamus magnam architecto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, culpa reprehenderit necessitatibus aliquam odio nam eius, delectus voluptatum odit ipsa, reiciendis a commodi error perspiciatis optio doloremque aspernatur cupiditate corrupti. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab numquam rem repellendus fuga architecto est autem corporis saepe, neque minus labore quo repudiandae. Dolore illum aspernatur eum accusamus magnam architecto?</p>
+        </div>
+
+
+        <!--Footer-->
+        <footer class="footer-distributed">
+            <div class="footer-right">
+                <a href="https://www.facebook.com/kiss.martin.77398"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-tiktok"></i></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="bx bxl-youtube"></i></a>
+                <a href="https://github.com/214SZFT/Pizzageny-" target="_blank"><i class="bx bxl-github"></i></a>
+            </div>
+        
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a class="link-1" href="#">Főoldal</a>
+            
+                    <a href="#">Választékunk</a>
+            
+                    <a href="#">Rólunk</a>
+            
+                    <a href="#">GYIK</a>
+            
+                    <a href="#">Belépés</a>
+                </p>
+            
+                <p>2/14.SZFT Türrös bagázsa &copy; 2022</p>
+            </div>
+        
+        </footer>
+    </div>
+
+
+
+    <script src="./Frontend/js/angular.min.js"></script>
+    <script src="./Frontend/js/bootstrap.min.js"></script>
+    <script src="./Frontend/js/app.js"></script>
+    <script src="./Frontend/js/dbFactory.js"></script>
+    <script src="./Frontend/js/pizzaCtrl.js"></script>
+    <script src="./Frontend/js/rendelesCtrl.js"></script>
+    <script src="./Frontend/js/userCtrl.js"></script>
+    <script src="./Frontend/js/statisztikaCtrl.js"></script>
+
 </body>
 </html>

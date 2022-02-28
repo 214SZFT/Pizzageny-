@@ -22,17 +22,19 @@
                <tr>
                    <td>ID</td>
                    <td>db</td>
+                   <td>Törlés</td>
                </tr>
            </thead>
            <tbody>
-               <tr ng-repeat="pizza in values">
-                   <td>{{pizza.id}}</td>
+               <tr ng-repeat="pizza in kiras">
+                   <td>{{pizza.nev}}</td>
                    <td>{{pizza.db}}</td>
+                   <td><button ng-click="torol($index)"> Törlöl</button></td>
                </tr>
            </tbody>
            <tfoot>
             <tr>
-                <td>Összesen: {{pizzak.length}} rekord</td>
+                <td>Összesen: {{values.length}} rekord</td>
             </tr>
            </tfoot>
        </table>
